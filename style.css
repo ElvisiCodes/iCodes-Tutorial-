@@ -1,0 +1,297 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  margin:0;
+  padding:0;
+  background:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background: #808080;
+  border: 1px solid;
+}
+.nav-head{
+  font-size: 20px;
+  text-align: center;
+}
+.nav-bar>ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+.nav-bar a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  background: #e8491d;
+  padding: 30px;
+}
+.nav-bar li{
+  float:left;
+  width:25%;
+  text-align:center;
+  border-bottom: 3px solid #008000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.current a{
+  color: rgba(0,0,0,1);
+  cursor:pointer;
+}
+
+
+/* This is the main body styling */
+img{
+  max-width:100%;
+  height:auto;
+  opacity:0.8;  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-content{
+  position: relative;
+}
+#img-content{
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+
+
+/* Form styling */
+.form-container{
+  position:relative;
+  width: 350px;
+  height:550px;
+  background: transparent;
+  border: 2px solid #D3D3D3;
+  margin: 0 auto;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+.form,form-area{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:30px 0;
+  height: 50px;
+  width:100%;
+  border-bottom: 2px solid;
+}
+.form>input{
+  width:100%;
+  height:100%;
+  outline: none;
+  border: none ;
+  background: transparent;
+  color:#000000;
+}
+.form>input::placeholder{
+  color: rgba(0,0,0,0.5)
+}
+button{
+  width: 60%;
+  border-radius: 20px;
+  border:none;
+  padding: 7px;
+  transition-duration: 1.5s;
+  background:#000000;
+  color:#ffffff;
+}
+.btn{
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.btn>button:hover{
+  cursor: pointer;
+}
+.material-icons{
+  position: absolute;
+  right: 20px;
+  color:#000000;
+}
+textarea{
+  background:rgba(255,255,255,0.8);
+  outline: none;
+  padding:10px;
+}
+.service-list ul{
+  list-style-type: square;
+  margin:10px;
+}
+.service-list li{
+  word-spacing: 5px;
+  font-size: 20px;
+}
+
+
+
+/* footer styling for index.html, about.html, service.html and contact.html */
+footer{
+  position:relative;
+  background: #D3D3D3;
+}
+main{
+  flex:1 0 auto;
+}
+.footer-content> div{
+  float:left;
+  padding:20px;
+}
+.footer-content>div:first-child{
+  width:35%;
+  text-align: center;
+  padding-top: 70px;
+}
+.footer-content>div:last-child{
+  width:65%;
+}
+.footer-content ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+.footer-content a{
+  text-decoration:none;
+  color:#000000;
+  margin-bottom:7px;
+}
+.footer-content::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.footer-content{
+  margin-bottom: 40px;
+}
+.copyright{
+  position: absolute;
+  width:100%;
+  height: 40px;
+  bottom:0px;
+  left:0px;
+  padding:10px;
+  background:#e8491d;
+  text-align: center;
+}
+body{
+ display:flex;
+ flex-direction: column;
+ max-height: 100vh;
+}
+
+
+
+/* About page styling */
+.about-content{
+  width:90%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.about-content img{
+  opacity:1;
+}
+article p{
+  background: #D3D3D3;
+  padding:20px;
+  border-radius: 20px;
+  
+}
+
+
+/* Service page styling*/
+.service ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.service li{
+  position:relative;
+  background:#D3D3D3;
+  width:350px;
+  text-align: center;
+  margin:0 auto;
+  padding:10px;
+  margin-bottom:20px;
+  border-radius: 20px;
+}
+.service p{
+  padding-bottom: none;
+  color:#000000;
+}
+
+
+/* Contact page styling*/
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+.social-media>a{
+  padding:30px;
+  margin:30px 10px;
+  font-size:40px;
+}
+.fa-square-facebook{
+  color: #0000ff;
+}
+.fa-square-whatsapp{
+  color:#25d366;
+}
+.fa-square-twitter{
+  color: #87CEEB;
+}
+.fa-square-instagram{
+  color:#000000;
+}
+.social-media i{
+  transform:scale(2.0);
+  aspect-ratio:1;
+}
+.social-media>i:last-child{
+  margin-right: none;
+}
+a>i{
+  transition-duration: 2s;
+}
+a:hover>i{
+  transform: scale(3.0);
+}
+.contact-address>p{
+  text-align: center;
+}
+.contact-address{   
+  background:#D3D3D3;
+  width:90%;
+  margin: 0 auto;
+  border-radius:20px;
+  padding:10px;
+}
+
+
+
+/* media queries */
+@media only screen and (orientation: landscape){
+  #img-content{
+    top:100px;
+  }
+  img{
+    width:100%;
+  }
+  .work-service>li{
+    float:left;
+    margin: 20px 33.3px;
+    width:25%;
+  }
+  .work-service::after{
+    content: "";
+    display: block;
+    clear:both;
+  }
+}
